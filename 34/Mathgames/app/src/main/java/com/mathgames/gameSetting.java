@@ -10,7 +10,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class gameSetting extends Activity {
-    TextView Kid,Pro,Legend,basic30,advance,playbtn;
+    TextView Easy,Medium,Hard,basic30,advance60,playbtn;
     int difficultLevel = 1;
     int timeSelect = 1;
     //on difficulty  level click method
@@ -19,29 +19,29 @@ public class gameSetting extends Activity {
         int choice =Integer.parseInt(view.getTag().toString());
         if(choice == 1)
         {
-            Kid.setTextColor(Color.WHITE);
-            Pro.setBackgroundColor(Color.TRANSPARENT);
-            Pro.setTextColor(Color.TRANSPARENT);
-            Legend.setBackgroundColor(Color.TRANSPARENT);
-            Legend.setTextColor(Color.TRANSPARENT);
+            Easy.setTextColor(Color.BLACK);
+            Medium.setBackgroundColor(Color.TRANSPARENT);
+            Medium.setTextColor(Color.TRANSPARENT);
+            Hard.setBackgroundColor(Color.TRANSPARENT);
+            Hard.setTextColor(Color.TRANSPARENT);
             difficultLevel = 1;
         }
         else if(choice == 2 )
         {
-            Pro.setTextColor(Color.WHITE);
-            Kid.setBackgroundColor(Color.TRANSPARENT);
-            Kid.setTextColor(Color.TRANSPARENT);
-            Legend.setBackgroundColor(Color.TRANSPARENT);
-            Kid.setTextColor(Color.TRANSPARENT);
+            Medium.setTextColor(Color.BLACK);
+            Easy.setBackgroundColor(Color.TRANSPARENT);
+            Easy.setTextColor(Color.TRANSPARENT);
+            Hard.setBackgroundColor(Color.TRANSPARENT);
+            Hard.setTextColor(Color.TRANSPARENT);
             difficultLevel = 2;
         }
         else if(choice == 3)
         {
-            Legend.setTextColor(Color.WHITE);
-            Pro.setBackgroundColor(Color.TRANSPARENT);
-            Pro.setTextColor(Color.TRANSPARENT);
-            Kid.setBackgroundColor(Color.TRANSPARENT);
-            Kid.setTextColor(Color.TRANSPARENT);
+            Hard.setTextColor(Color.BLACK);
+            Medium.setBackgroundColor(Color.TRANSPARENT);
+            Medium.setTextColor(Color.TRANSPARENT);
+            Easy.setBackgroundColor(Color.TRANSPARENT);
+            Easy.setTextColor(Color.TRANSPARENT);
             difficultLevel = 3;
         }
 
@@ -55,14 +55,14 @@ public class gameSetting extends Activity {
         int timeChoice = Integer.parseInt(view.getTag().toString());
         if(timeChoice == 11)
         {
-            basic30.setTextColor(Color.WHITE);
-            advance.setBackgroundColor(Color.TRANSPARENT);
-            advance.setTextColor(Color.TRANSPARENT);
+            basic30.setTextColor(Color.BLACK);
+            advance60.setBackgroundColor(Color.TRANSPARENT);
+            advance60.setTextColor(Color.TRANSPARENT);
             timeSelect = 1;
         }
         else if(timeChoice == 12)
         {
-            advance.setTextColor(Color.WHITE);
+            advance60.setTextColor(Color.BLACK);
             basic30.setTextColor(Color.TRANSPARENT);
             basic30.setBackgroundColor(Color.TRANSPARENT);
             timeSelect = 2;
@@ -76,11 +76,11 @@ public class gameSetting extends Activity {
         setContentView(R.layout.activity_game_setting);
 
         //linking xml layouts to java
-        Kid = findViewById(R.id.Kid);
-        Pro = findViewById(R.id.Pro);
-        Legend = findViewById(R.id.Legend);
+        Easy = findViewById(R.id.Easy);
+        Medium = findViewById(R.id.Medium);
+        Hard = findViewById(R.id.Hard);
         basic30 = findViewById(R.id.basic30);
-        advance = findViewById(R.id.advance);
+        advance60 = findViewById(R.id.advance60);
         playbtn = findViewById(R.id.playbtn);
 
 
