@@ -30,7 +30,7 @@
         android:id="@+id/playButton"
         android:layout_width="212dp"
         android:layout_height="1dp"
-        android:layout_marginLeft="100dp"
+        android:layout_gravity="center"
         android:layout_weight="1"
 
         android:gravity="center"

@@ -20,9 +20,7 @@
         <activity android:name=".GameActivity" />
         <activity android:name=".gameOver" />
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+
 
         <activity android:name=".gameSetting"></activity>
 
