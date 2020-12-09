@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/batman"
+    android:background="@drawable/layout1"
     android:orientation="vertical">
 
 
@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        android:background="@drawable/ironman"
+        android:background="@drawable/layout2"
         android:orientation="horizontal">
 
         <TextView
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.3"
-        android:background="@drawable/ironman"
+        android:background="@drawable/layout2"
         android:orientation="vertical">
 
         <LinearLayout

@@ -32,7 +32,7 @@ public class MainActivity extends Activity{
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this , gameSetting.class);
                 startActivity(intent);
-                playButton.setBackgroundColor(R.drawable.batman);
+                playButton.setBackgroundColor(R.drawable.layout1);
             }
         });
 
